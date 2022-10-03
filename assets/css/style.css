@@ -1,0 +1,514 @@
+/* Template Name: Forhad Ahmed-      
+   {Responsive Personal Template.}
+   Email: Forhadahmad16@gmail.com
+   Website: http://www.ForhadAhmed.in
+   Created: 10 April 2020
+   File Description: Main Css file of the template
+*/
+/*************************/
+/*         INDEX         */
+/*========================
+ *    01.  Common Css    *
+ *    02.  Custom Code   *
+ *    03.  Navbar        *
+ *    04.  Home          *
+ *    05.  About         *
+ *    06.  Service       *
+ *    07.  Portfolio     *
+ *    08.  Counter       *
+ *    09.  Review        *
+ *    10.  Pricing Plan  *
+ *    11.  Blog          *
+ *    12.  Hire Me       *
+ *    13.  Contact       *
+ *    14.  Footer        *
+ *    15.  Top Switch    *
+ ========================*/
+
+/*........................
+      Common Css
+.........................*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+}
+
+img,
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+ol,
+li {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/*........................................
+.....................................
+          COMMON CUSTOM CODE
+.....................................
+........................................*/
+
+.text-charcoal {
+    color: #414141 !important;
+}
+
+h1 {
+    font-size: 44px !important;
+
+}
+
+h2 {
+    font-size: 38px !important;
+}
+
+h3 {
+    font-size: 32px !important;
+}
+
+h4 {
+    font-size: 26px !important;
+}
+
+h5 {
+    font-size: 20px !important;
+}
+
+h6 {
+    font-size: 18px !important;
+}
+
+p {
+    font-size: 16px !important;
+}
+
+.bg-light {
+    background-color: #f5f5f5 !important;
+}
+
+.header-text h3 {
+    color: #414141;
+}
+
+.horizontal-line .top-line {
+    height: 2px;
+    width: 44px;
+    background: #bcbcbc;
+}
+
+.horizontal-line .bottom-line {
+    height: 3px;
+    width: 77px;
+    background: #bcbcbc;
+}
+
+.horizontal-line p {
+    margin-bottom: 0px;
+}
+
+/*...........................
+      Navber part  Css  
+.............................*/
+
+.navbar {
+    top: 0;
+    z-index: 9;
+    height: 70px;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link {
+    color: #777;
+    font-size: 13px;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+    color: #000000 !important;
+    font-weight: 700 !important;
+
+}
+
+.social-icon i {
+    width: 28px;
+    height: 28px;
+    transition: all linear .2s;
+}
+
+.social-icon i:hover {
+    color: #ffffff !important;
+    background-color: #6c757d !important;
+}
+
+/*...........................
+      Banner part  Css  
+.............................*/
+
+#banner {
+    padding-top: 185px;
+}
+
+.banner-img img {
+    border: 2px solid #f2f2f2;
+}
+
+.scroll {
+    top: 60%;
+    left: 50%;
+    width: 28px;
+    height: 42px;
+    margin-top: -35px;
+    margin-left: -15px;
+    border-radius: 25px;
+}
+
+.scroll-dot {
+    content: '';
+    width: 3px;
+    height: 8px;
+    margin-left: 12px;
+    border-radius: 4px;
+    animation-name: scroll;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+@media (max-width: 767px) {
+    .scroll {
+        position: relative;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(30px)
+    }
+}
+
+/*...........................
+      Service part  Css  
+.............................*/
+
+.service-items {
+    transition: all linear 0.3s;
+}
+
+.service-items:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 20px 10px #d9d9d9;
+}
+
+.service-items:hover .service-icon i {
+    color: #ffffff !important;
+    background-color: #6c757d !important;
+}
+
+.service-icon i {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 38px;
+}
+
+.service-items::after {
+    bottom: 0;
+    left: 50%;
+    width: 60%;
+    height: 3px;
+    content: '';
+    position: absolute;
+    transition: all linear .3s;
+    transform: translateX(-50%);
+    background-color: transparent;
+}
+
+.service-items:hover::after {
+    width: 90%;
+    background-color: #414141;
+}
+
+.background-icon i {
+    transition: all linear .3s;
+}
+
+.background-icon {
+    left: 5px;
+    bottom: 5px;
+    opacity: 0.05;
+    font-size: 45px;
+    position: absolute;
+}
+
+.service-items:hover .background-icon i {
+    font-size: 170px;
+}
+
+/*...........................
+       Portfolio part  Css  
+.............................*/
+
+.portfolio-item-menu ul li {
+    cursor: pointer;
+    font-size: 12px;
+    min-width: 80px;
+}
+
+.portfolio-item-menu ul li.active {
+    color: #ffffff !important;
+    background-color: #6c757d !important;
+}
+
+.portfolio-items {
+    overflow: hidden;
+}
+
+.portfolio-image img {
+    transform: scale(1);
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+.portfolio-items:hover .portfolio-image img {
+    transform: scale(1.2) rotate(5deg);
+}
+
+.portfolio-overlay {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s linear;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.portfolio-overlay i {
+    top: 50%;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    transition: all 0.3s linear;
+    transform: translateY(-50%);
+}
+
+.portfolio-items:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-items .project-title {
+    left: 30px;
+    opacity: 0;
+    bottom: 0px;
+    transition: all 0.3s linear;
+}
+
+.portfolio-items .project-title p {
+    font-size: 14px !important;
+}
+
+.portfolio-items:hover .project-title {
+    opacity: 1;
+}
+
+/*...........................
+       Counter part  Css  
+.............................*/
+
+.counter-icon i {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+    line-height: 57px;
+}
+
+.counter {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/*...........................
+       Review part  Css  
+.............................*/
+
+.client-review .contant .review-shape {
+    left: 50%;
+    top: -24px;
+    z-index: 1;
+    width: 45px;
+    height: 45px;
+    transform: translate(-50%) rotate(45deg);
+}
+
+.carousel-indicators {
+    margin-bottom: -48px;
+}
+
+.carousel-indicators .bg-dark {
+    width: 25px;
+}
+
+.reviewer img {
+    width: 80px;
+    height: 80px;
+    border: 2px dashed #6c757d;
+}
+
+.client-review .text-contant h6 {
+    font-size: 14px !important;
+}
+
+.client-review .text-contant small {
+    font-size: 13px;
+}
+
+/*...........................
+       Pricing part  Css  
+.............................*/
+
+.price-table {
+    transition: all linear 0.3s;
+}
+
+.price-table:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 20px 10px #d9d9d9;
+}
+
+.price-table .price-icon-text i {
+    width: 80px;
+    height: 80px;
+    font-size: 40px;
+}
+
+.price-table .price-details li {
+    font-size: 15px;
+}
+
+.price-icon-text {
+    top: 0px;
+    left: 0px;
+    height: 43%;
+    width: 100%;
+    border-radius: 0 0 50% 50%;
+    transition: all 0.4s linear;
+    background-color: rgb(232, 232, 232);
+}
+
+.price-table:hover .price-icon-text {
+    color: #cccccc;
+    background-color: #525252;
+}
+
+.price-table:hover .price-icon-text i {
+    border-color: #cccccc !important;
+}
+
+.join-us button:hover {
+    color: #cccccc !important;
+    background-color: #525252;
+    transition: all 0.4s linear;
+}
+
+/*...........................
+       Blog part  Css  
+.............................*/
+
+.blog-items .blog-content ul li {
+    font-size: 14px;
+}
+
+.blog-items {
+    transition: all linear 0.3s;
+}
+
+.blog-items:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 20px 10px #d9d9d9;
+}
+
+/*...........................
+       Contact part  Css  
+.............................*/
+
+.contact-contant .contact-icon i {
+    width: 53px;
+    height: 53px;
+    font-size: 25px;
+}
+
+.contact-contant {
+    width: auto;
+    min-height: 172px;
+    overflow-wrap: break-word;
+}
+
+.contact-contant .contant-details a {
+    font-size: 14px;
+}
+
+.contact-form .form .form-control {
+    color: #6c797d;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+/*...........................
+       Footer part  Css  
+.............................*/
+
+.footer-part .header-image img {
+    width: 80px;
+    height: 50px;
+}
+
+.footer-social-icon i {
+    width: 32px;
+    height: 32px;
+    transition: all linear .2s;
+}
+
+.footer-social-icon i:hover {
+    color: #ffffff !important;
+    background-color: #6c757d !important;
+}
+
+/*...........................
+        Top Switch part  Css  
+.............................*/
+
+.top-switch {
+    right: 25px;
+    bottom: 22px;
+}
